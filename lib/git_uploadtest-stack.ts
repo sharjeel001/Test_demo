@@ -15,6 +15,7 @@ export class GitUploadtestStack extends cdk.Stack {
         type:dynamodb.AttributeType.STRING 
       },
     });
+    let a= "";
 
   }
 }
