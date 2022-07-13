@@ -15,7 +15,14 @@ export class GitUploadtestStack extends cdk.Stack {
         type:dynamodb.AttributeType.STRING 
       },
     });
-    let a= "";
+
+    let dataBase1 = new dynamodb.Table(this,"fazeela_table",{
+      billingMode: dynamodb.BillingMode.PAY_PER_REQUEST,
+      partitionKey:{
+        name: "id",
+        type:dynamodb.AttributeType.STRING 
+      },
+    });
 
   }
 }
